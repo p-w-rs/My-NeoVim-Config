@@ -1,13 +1,3 @@
-vim.g.mapleader = " "
-
-vim.opt.guicursor = "i:ver15"
-vim.opt.termguicolors = true
-
-vim.cmd("set expandtab")
-vim.cmd("set tabstop=4")
-vim.cmd("set softtabstop=4")
-vim.cmd("set shiftwidth=4")
-
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
 	vim.fn.system({
@@ -21,4 +11,5 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+require("vim-options")
 require("lazy").setup("plugins")
