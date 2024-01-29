@@ -7,7 +7,6 @@ return {
 				-- Code Actions
 				null_ls.builtins.code_actions.eslint_d, --Javascript
 				null_ls.builtins.code_actions.refactoring,
-				null_ls.builtins.code_actions.ts_node_action,
 
 				-- Diagnostics
 				null_ls.builtins.diagnostics.gccdiag, --C/C++
@@ -27,7 +26,5 @@ return {
 				null_ls.builtins.formatting.gersemi, --CMake
 			},
 		})
-		vim.keymap.set("n", "<leader><leader>", vim.lsp.buf.format, {})
-		vim.keymap.set("n", "<leader>a", vim.lsp.buf.code_action, {})
 	end,
 }
