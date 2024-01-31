@@ -9,7 +9,6 @@ return {
 				null_ls.builtins.code_actions.refactoring,
 
 				-- Diagnostics
-				null_ls.builtins.diagnostics.gccdiag, --C/C++
 				null_ls.builtins.diagnostics.cppcheck, --C/C++
 				null_ls.builtins.diagnostics.pylint, --Python
 				null_ls.builtins.diagnostics.ruff, --Python
