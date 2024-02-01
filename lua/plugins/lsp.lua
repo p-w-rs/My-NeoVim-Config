@@ -27,8 +27,6 @@ return {
 					"pyright",
 					"yamlls",
 					"zls",
-					"mypy",
-					"black",
 				},
 			})
 		end,
@@ -51,7 +49,7 @@ return {
 			lspconfig.lua_ls.setup({ capabilities = capabilities })
 			lspconfig.ols.setup({ capabilities = capabilities })
 			lspconfig.powershell_es.setup({ capabilities = capabilities })
-			lspconfig.ruff_lsp.setup({ capabilities = capabilities })
+      lspconfig.pyright.setup({ capabilities = capabilities })
 			lspconfig.yamlls.setup({ capabilities = capabilities })
 			lspconfig.zls.setup({ capabilities = capabilities })
 			-- Global mappings.
