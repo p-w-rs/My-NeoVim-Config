@@ -10,8 +10,6 @@ return {
 
 				-- Diagnostics
 				null_ls.builtins.diagnostics.cppcheck, --C/C++
-				null_ls.builtins.diagnostics.pylint, --Python
-				null_ls.builtins.diagnostics.ruff, --Python
 				null_ls.builtins.diagnostics.checkmake, --Make
 
 				-- Formatting
